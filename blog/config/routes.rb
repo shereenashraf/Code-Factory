@@ -2,11 +2,18 @@ Rails.application.routes.draw do
 
   get 'homes/show'
 
-  get 'welcome/index'
+  #get 'welcome/index'
 
 
   get 'welcome/index'
-
+  match '/Farahat' => 'welcome#Farahat', via: [:get]
+  match '/Amr' => 'welcome#Amr', via: [:get]
+  match '/Haidy' => 'welcome#Haidy', via: [:get]
+  match '/Mira' => 'welcome#Mira', via: [:get]
+  match '/Caroline' => 'welcome#Caroline', via: [:get]
+  match '/Shereen' => 'welcome#Shereen', via: [:get]
+ match '/members' => 'welcome#members', via: [:get]
+  
   devise_for :models
   devise_for :users
 
@@ -22,7 +29,7 @@ Rails.application.routes.draw do
   resources :comments
 end
 
-   root 'welcome#index'
+   #root 'welcome#index'
 
 
   # Example of regular route:
