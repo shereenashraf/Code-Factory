@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+<title>LogIn</title>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+  header {
+    text-align: center;
+  background-size: ;
+  text-align: center;
+  background-repeat: no-repeat;
+
+  color: rgb(000);
+  }
+    p {
+      text-align: center;
+      color: rgb(000);
+      border:0;
+      font-size:20;
+      font-family: Berlin Sans FB;
+    }
+    a {
+      color: black;
+    }
+    h1 {
+      font-size:70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid black;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 0px;
+      background: white;
+      text-align: center;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    input {
+      float:center;
+      border: 0;
+      padding: 20px;
+      font-size: 20px;
+      font-family: Berlin Sans FB;
+
+    }
+    article{
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+    h1 {
+      font-size: 36px;
+      }
+      li{
+        display: block;
+        padding: 5px;
+    }
+    }
+  </style>
+</head>
+</header>
+<body>
+  <header>
+
+  <img src= "https://scontent-lhr.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/s720x720/11006380_439477249537648_3831387245294219827_n.png?oh=48306d955865838824996b9a1ef42611&oe=55510EEA" align="center">
+    <h1 style="color:orange""text-align: center">LogIn</h1>
+
+  
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+
+
+  </header>
+</body>
+
+
+

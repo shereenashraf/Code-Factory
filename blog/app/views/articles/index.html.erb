@@ -75,7 +75,7 @@ p{
 <img src = "https://scontent-lhr.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/p173x172/11006380_439477249537648_3831387245294219827_n.png?oh=238ba33880e70cddfdb0bba08cf7723c&oe=558522F5" align="center">
 <ul>
 <li><a href="#">Our Projects</a></li>
-<li><a href="Members.html">Our Members</a></li>
+<a href="<%= url_for controller: 'welcome', action: 'members' %>" style=" position:relative; top:-0.5px;left:-12px; right:50px; width:100px; height:25px;font-size:15pt; color:black;" >Our Members</a>
 <li><a href="blog.html">Blog</a></li>
 </ul>
 
@@ -104,7 +104,7 @@ p{
       
       <td><%= link_to 'Destroy', article_path(article),
               method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+              data: { confirm: 'Are you sure you want to delete?' } %></td>
     </tr>
   <% end %>
 </table>
@@ -112,11 +112,11 @@ p{
 </div1>
 </p>
 
-<p> Follow </p>
+ <p> Follow us </p>
 <header>
-<a href ="#" > <img src ="https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/512/Twitter_alt_4.png" width="90" height="70" >
-  <a href = "#" > <img src ="http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/256px-Youtube_icon.svg.png" width="90" height="70" >
-  <a href = "#" > <img src = "http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Google-Plus-icon.png"width="90" height="70" >
+<a href ="https://twitter.com/TheCode_Factory" > <img src ="https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/512/Twitter_alt_4.png" width="90" height="70" >
+  <a href = "https://www.youtube.com/channel/UCn-CLnROwqKw-i8AQD1hdlg" > <img src ="http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/256px-Youtube_icon.svg.png" width="90" height="70" >
+  <a href = "https://plus.google.com/b/107105246190532748347/107105246190532748347/posts" > <img src = "http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Google-Plus-icon.png"width="90" height="70" >
   <a href = "https://www.facebook.com/codefactorycode" > <img src ="http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png" width ="90" height= "70" >
 </article>
 

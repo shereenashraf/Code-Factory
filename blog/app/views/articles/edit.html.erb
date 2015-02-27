@@ -88,11 +88,32 @@ font-size: 26px;
 
 <h1>Edit article</h1>
  
-<%= render 'form' %>
- 
-<%= link_to 'Back', articles_path %>
-</ul>
 
+ <%= render 'form' %>	
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+
+<a class="twitter-share-button"
+  href="https://twitter.com/share">
+Tweet
+</a>
+<script>
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};
+if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}
+(document,"script","twitter-wjs"));
+</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script> <g:plus action="share"> </g:plus>
+
+</ul>
+<%= link_to 'Back', articles_path %>
 </header>
 <article>
 <div1>
@@ -102,9 +123,9 @@ font-size: 26px;
 
 <p> Follow </p>
 <header>
-<a href ="#" > <img src ="https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/512/Twitter_alt_4.png" width="90" height="70" >
-  <a href = "#" > <img src ="http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/256px-Youtube_icon.svg.png" width="90" height="70" >
-  <a href = "#" > <img src = "http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Google-Plus-icon.png"width="90" height="70" >
+<a href ="https://twitter.com/TheCode_Factory" > <img src ="https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/512/Twitter_alt_4.png" width="90" height="70" >
+  <a href = "https://www.youtube.com/channel/UCn-CLnROwqKw-i8AQD1hdlg" > <img src ="http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/256px-Youtube_icon.svg.png" width="90" height="70" >
+  <a href = "https://plus.google.com/b/107105246190532748347/107105246190532748347/posts" > <img src = "http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Google-Plus-icon.png"width="90" height="70" >
   <a href = "https://www.facebook.com/codefactorycode" > <img src ="http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png" width ="90" height= "70" >
 </article>
 

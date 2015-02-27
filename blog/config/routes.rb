@@ -6,14 +6,13 @@ Rails.application.routes.draw do
 
 
   get 'welcome/index'
-  match '/Farahat' => 'welcome#Farahat', via: [:get]
-  match '/Amr' => 'welcome#Amr', via: [:get]
-  match '/Haidy' => 'welcome#Haidy', via: [:get]
-  match '/Mira' => 'welcome#Mira', via: [:get]
-  match '/Caroline' => 'welcome#Caroline', via: [:get]
-  match '/Shereen' => 'welcome#Shereen', via: [:get]
- match '/members' => 'welcome#members', via: [:get]
-  
+  get 'welcome/members'
+  get '/welcome/Farahat.html.erb', to: 'welcome#Farahat'
+  get '/welcome/Amr.html.erb', to: 'welcome#Amr'
+  get '/welcome/haidy.html.erb', to: 'welcome#haidy'
+  get '/welcome/mira.html.erb', to: 'welcome#mira'
+  get '/welcome/caroline.html.erb', to: 'welcome#caroline'
+  get '/welcome/Shereen.html.erb', to: 'welcome#Shereen'
   devise_for :models
   devise_for :users
 

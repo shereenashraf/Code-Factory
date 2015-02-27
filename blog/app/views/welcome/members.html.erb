@@ -23,6 +23,10 @@ a{
   color: black;
   font-size: 20px;
   font-family: Berlin Sans FB;
+  padding-top: 100px;
+  display: inline;
+  position: relative;
+  margin-left: 20px
 
 
 }
@@ -43,21 +47,16 @@ li {
   padding: 0px 10px 0px 10px;
 }
 p{
-     text-align: center;
-     color: black;
-     border: 10;
-     font-family: Berlin Sans FB;
-    font-size: 30px;
-    }
+  font-size: 30px;
+  text-align:center;
+  font-family: Arial black;
+
     ul {
   padding:10px;
 
   background: white;
 }
-li {
-  display:inline;
-  padding: 30px;
-}
+
 
 
 </style>
@@ -66,25 +65,87 @@ li {
   <header>
   <img src = "https://scontent-lhr.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/p173x172/11006380_439477249537648_3831387245294219827_n.png?oh=238ba33880e70cddfdb0bba08cf7723c&oe=558522F5" align="center">
         <ul>
-      <li><a href="#">Our Projects</a></li>
-      <li><a href="Members.html">Our Members</a></li>
-<li><a href="blog.html">Blog</a></li>
+      <a href="#">Our Projects</a>
+<%= link_to 'Blog', controller: 'articles' %>
 
 
+</ul>
 
- <img src = 'https://scontent.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/s720x720/10386357_10152257611551733_1829423528217689767_n.jpg?oh=dcb7f7df024bcf57a4f4c60d5b3a2734&oe=558321E8.png'width="210" height="270">
- <li><a href="shereen.html">Shereen Ashraf</a></li><br> 
- <img src="http://i.imgur.com/MdWozNj.jpg?1" width="210" height="270" >
- <li><a href="mira.html">Mira Nagui</a></li> 
-  <img src='farahat.jpg' width="210" height="270" >
- <li><a href="farahat.html">Ahmed Farahat</a></li><br> 
-<img src='haidy.jpg' width="210" height="270" >
- <li><a href="haidy.html">Haidy Reda</a></li>
- <img src='amr.jpg' width="210" height="270" >
- <li><a href="amr.html">Amr ElAasar</a></li><br>
- <img src="http://i.imgur.com/E2Qe8hG.jpg" width="210" height="270" > 
- <li><a href="caroline.html">Caroline Rifaat</a></li><br>
-    </ul>
+<img id="1" src="https://scontent-lhr.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10551084_10153044793835874_3287537384530892757_n.jpg?oh=c14c6fadac93ceb6f92a1814a942bfb0&oe=554BFDCA"  style="" width="150" height="220" >
+ <a href="/welcome/Farahat.html.erb">Ahmed Farahat</a> 
+
+<img id="2" src='https://scontent-lhr.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/17903_10151547751527148_2084458155_n.jpg?oh=de117736a253ba32aea6618aa9db5810&oe=5594DD72'  style="" width="190" height="220" >
+ <a href="/welcome/Amr.html.erb">Amr ElAassar</a>
+
+
+<img id="3" src="https://scontent-lhr.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/11025820_10153065338845874_690926693440877385_n.jpg?oh=6742f3951bd4d8ea7e0d8f3bb9ca64fc&oe=558DBF8D"  style="" width="150" height="220" >
+ <a href="/welcome/haidy.html.erb">Haidy Reda</a>
+ 
+
+ <img id="4" src="http://i.imgur.com/MdWozNj.jpg?1" style="" width="150" height="220" >
+ <a href="/welcome/mira.html.erb">Mira Nagui</a> 
+
+<img id="5" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/t31.0-1/c0.0.849.849/10518314_10152257611551733_1829423528217689767_o.jpg"style="" width="150" height="220" >
+ <a href="/welcome/Shereen.html.erb">Shereen Ashraf</a> 
+
+
+ <img id="6" src="http://i.imgur.com/E2Qe8hG.jpg"  style="" width="150" height="220" >
+ <a href="/welcome/caroline.html.erb">Caroline Rifaat</a>
+    
+
+
+</script>
+    <style>
+
+.1{
+  
+ border-radius: 25px;
+ top: 10px ;
+ left: 80px;
+
+
+}
+.2{
+ border-radius: 30%;
+ top: 10px ;
+ left: 80px;
+
+
+}
+
+
+.4{
+ border-radius: 30%;
+ top: 10px ;
+ left: 80px;
+
+
+}
+.5{
+ border-radius: 30%;
+ top: 10px ;
+ left: 80px;
+
+
+}
+.6{
+ border-radius: 30%;
+ top: 10px ;
+ left: 80px;
+
+
+}
+
+    </style>
+ <p> Follow us </p>
+<header>
+<a href ="https://twitter.com/TheCode_Factory" > <img src ="https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/512/Twitter_alt_4.png" width="90" height="70" >
+  <a href = "https://www.youtube.com/channel/UCn-CLnROwqKw-i8AQD1hdlg" > <img src ="http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/256px-Youtube_icon.svg.png" width="90" height="70" >
+  <a href = "https://plus.google.com/b/107105246190532748347/107105246190532748347/posts" > <img src = "http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Google-Plus-icon.png"width="90" height="70" >
+  <a href = "https://www.facebook.com/codefactorycode" > <img src ="http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png" width ="90" height= "70" >
+</article>
+    
+
 
   </header>
 

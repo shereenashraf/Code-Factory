@@ -1,3 +1,88 @@
+
+<!DOCTYPE html>
+
+<head>
+<title>Blog</title>
+<link href="/normalize.css" rel="stylesheet">
+
+<style>
+
+header {
+text-align: center;
+background-size: cover;
+color: rgb(000);
+background background-repeat: no-repeat;
+
+
+}
+body {
+text-align: center;
+color: rgb(000);
+font-family: Berlin Sans FB;
+font-size: 20px;
+color: #FF6600;
+margin-right: 10%;
+margin-left: 10%;
+}
+a{
+color: black;
+font-size: 20px;
+font-family: Berlin Sans FB;
+
+
+}
+h1 {
+font-size: 70px;
+
+}
+
+img{
+margin: 40px 0px 0px 0px;
+border: 7px solid black;
+border-radius: 20px;
+
+}
+
+li {
+display:inline;
+padding: 0px 10px 0px 10px;
+}
+p{
+text-align: center;
+color: black;
+border: 10;
+font-family: Berlin Sans FB;
+font-size: 30px;
+
+}
+ul {
+padding:10px;
+
+background: white;
+}
+li {
+display:inline;
+padding: 30px;
+}
+p2 {
+  text-align: center;
+color: orange;
+border: 10 ;
+font-family: Berlin Sans FB;
+font-size: 26px;
+}
+
+
+
+</style>
+</head>
+<!-- <img src = "https://scontent-lhr.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/p173x172/11006380_439477249537648_3831387245294219827_n.png?oh=238ba33880e70cddfdb0bba08cf7723c&oe=558522F5" align="center"> -->
+<body>
+
+<header>
+
+
+
 <%= form_for([@article, @article.comments.build]) do |f| %>
   <p>
     <%= f.label :commenter %><br>
@@ -11,3 +96,37 @@
     <%= f.submit %>
   </p>
 <% end %>
+
+
+
+  
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+
+<a class="twitter-share-button"
+  href="https://twitter.com/share">
+Tweet
+</a>
+<script>
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};
+if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}
+(document,"script","twitter-wjs"));
+</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script> <g:plus action="share"> </g:plus>
+
+</body>
+
+</header>
+
+
+
+
+
